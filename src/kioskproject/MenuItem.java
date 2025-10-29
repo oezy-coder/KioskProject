@@ -16,14 +16,25 @@ public class MenuItem {
 
     // 기능
     public String getName() {
+
         return this.name;
     }
 
     public int getPrice() {
+
         return this.price;
     }
 
     public String getFeature() {
+
         return this.feature;
+    }
+
+    public void setPrice(int price) {
+        if (price > 0) {
+            this.price = price;
+        } else {
+            System.out.println("0보다 큰 값을 입력하세요.");
+        }
     }
 }
